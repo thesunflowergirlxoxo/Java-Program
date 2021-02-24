@@ -1,0 +1,18 @@
+import java.util.*;
+public class Convert
+{
+public static void main(String[] args)
+{
+int yearmins = 60*24*365;
+int daymins = 60*24;
+System.out.println("No. of minutes in a year: "+yearmins);
+System.out.println("No. of minutes in a day: "+daymins);
+Scanner sc = new Scanner(System.in);
+System.out.println("Input the number of minutes: ");
+int mins = sc.nextInt();
+int years = mins/yearmins;
+int remainmins= mins%yearmins;
+int day = remainmins/daymins;
+System.out.println(mins + " minutes is approximately " + years + " years and " + day + " days");
+}
+}
