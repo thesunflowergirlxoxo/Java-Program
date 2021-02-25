@@ -1,0 +1,30 @@
+import java.util.*;
+public class Employee 
+{
+public static void main(String [] args)
+{
+	String []name=new String[3];
+	String []address=new String[3];
+	int []year=new int[3];
+	int []sal=new int[3];
+	Scanner sc=new Scanner(System.in);
+	for(int i=0;i<3;i++)
+	{
+	System.out.println("Enter details of Employee "+(i+1)+":");
+	System.out.print("NAME: ");
+        name[i]=sc.nextLine();
+        System.out.print("\nADDRESS: ");
+        address[i]=sc.nextLine();
+	System.out.print("\nYEAR OF JOINING: ");
+        year[i]=sc.nextInt();
+	System.out.print("\nSALARY: ");
+        sal[i]=sc.nextInt();
+        sc.nextLine();
+	}
+	System.out.println("Name\tYear of Joining\tSalary\tAddress");
+	for(int i=0;i<3;i++)
+	{
+		System.out.println(name[i]+"\t"+year[i]+"\t\t"+sal[i]+"\t"+address[i]);
+	}
+}
+}
